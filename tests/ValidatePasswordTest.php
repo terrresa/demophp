@@ -1,6 +1,8 @@
 <?php
 
-class ValidatePasswordTest extends PHPUnit_Framework_TestCase{
+use PHPUnit\Framework\TestCase;
+
+class ValidatePasswordTest extends TestCase{
 
     public function testValidLength(){
         $valPass = new ValidatePassword();
