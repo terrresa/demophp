@@ -1,0 +1,40 @@
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<!--<phpdox xmlns="http://xml.phpdox.net/config">-->
+    <!--<project name="Rbac" source="${basedir}/module" workdir="${basedir}/data/api/xml">-->
+        <!--<collector backend="parser"/>-->
+        <!--<generator output="${basedir}/data/api">-->
+            <!--<build engine="html" enabled="true" output="api"/>-->
+            <!--&lt;!&ndash;<build engine="html" output="html"/>&ndash;&gt;-->
+        <!--</generator>-->
+    <!--</project>-->
+<!--</phpdox>-->
+
+
+<phpdox xmlns="http://xml.phpdox.net/config">
+<project name="Test" source="." workdir="data/phpdox">
+    <collector publiconly="false">
+        <include mask="*.php" />
+    </collector>
+
+    <generator output="data">
+        <build engine="html" enabled="true" output="api">
+            <file extension="html" />
+        </build>
+    </generator>
+</project>
+</phpdox>
+
+
+        <!--<phpdox xmlns="http://xml.phpdox.net/config">-->
+        <!--<project name="Rbac" source="module" workdir="data/phpdox">-->
+        <!--<collector publiconly="false">-->
+        <!--<include mask="*.php"/>-->
+        <!--</collector>-->
+
+        <!--<generator output="build">-->
+        <!--<build engine="html" enabled="true" output="data/api">-->
+        <!--<file extension="html"/>-->
+        <!--</build>-->
+        <!--</generator>-->
+        <!--</project>-->
+        <!--</phpdox>-->
