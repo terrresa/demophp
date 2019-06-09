@@ -11,7 +11,7 @@
 
 
 <phpdox xmlns="http://xml.phpdox.net/config">
-<project name="Test" source="." workdir="data/phpdox">
+<project name="Test" source="src" workdir="data/phpdox">
     <collector publiconly="false">
         <include mask="*.php" />
     </collector>
